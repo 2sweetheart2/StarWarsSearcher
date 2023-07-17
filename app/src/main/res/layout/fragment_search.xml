@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="#1f1f1f"
+            app:counterOverflowTextColor="@color/white"
+            app:counterTextColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:outlineAmbientShadowColor="@color/white"
+            app:placeholderTextColor="@color/white"
+            android:hint="type name of people, movies or starships etc."
+            app:layout_constraintTop_toTopOf="parent"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            android:id="@+id/search_edit_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear_list"
+            android:showDividers="middle"
+            android:divider="@drawable/divider"
+            app:layout_constraintTop_toBottomOf="@id/search_edit_text"
+
+            >
+
+        </LinearLayout>
+
+        <ProgressBar
+            app:layout_constraintTop_toBottomOf="@id/search_edit_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            android:id="@+id/waiter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/glush"
+            app:layout_constraintTop_toBottomOf="@id/linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

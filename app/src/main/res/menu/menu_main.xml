@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.sweetie.starwarssearcher.MainActivity">
+    <item
+        android:id="@id/SearchFragment"
+        android:title="Search"
+
+        android:icon="@drawable/search_icon"
+        />
+    <item
+        android:id="@id/FavoriteFragment"
+        android:icon="@drawable/icon_selector"
+        android:enabled="true"
+        android:title="Favorite"
+        />
+</menu>

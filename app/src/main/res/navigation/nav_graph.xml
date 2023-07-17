@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SearchFragment">
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="me.sweetie.starwarssearcher.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search"/>
+    <fragment
+        android:id="@+id/FavoriteFragment"
+        android:name="me.sweetie.starwarssearcher.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite"/>
+</navigation>
