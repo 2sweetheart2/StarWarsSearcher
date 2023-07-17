@@ -15,3 +15,5 @@
   - [HTTPRequests](https://github.com/2sweetheart2/StarWarsSearcher/blob/master/app/src/main/java/me/sweetie/starwarssearcher/requests/HTTPSRequests.kt) - класс, к которому обращается только SwAPI, для отправки запроса и получения ответа
 - [Объекты для парсинга с API](https://github.com/2sweetheart2/StarWarsSearcher/tree/master/app/src/main/java/me/sweetie/starwarssearcher/objects)
 - [CallBack'И, для API](https://github.com/2sweetheart2/StarWarsSearcher/tree/master/app/src/main/java/me/sweetie/starwarssearcher/interfaces)
+---
+с ближеный [apk](https://github.com/2sweetheart2/StarWarsSearcher/releases/tag/last) на всякий
